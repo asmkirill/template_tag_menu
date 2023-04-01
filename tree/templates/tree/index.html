@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    {% load menus_extras %}
+    <meta charset="UTF-8">
+    <title>Menu Tree</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'tree/css/tree.css' %}" />
+</head>
+
+<body>
+    <a href="/admin" class="admin_button">admin</a>
+    <h1>Django Template Tag Menu</h1>
+
+    {% draw_menu 'main_menu' %}
+    <br>
+    {% draw_menu 'one_more' %}
+</body>
+
+</html>
